@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aleksandr Sinkaruk MMI-6</title>
+    <style>
+      #main {
+        width: 700px;
+        margin: auto;
+  }
+  #wrapper {
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem auto 1rem auto;
+}
+
+.dangus {
+animation: dangus 15s infinite;
+width: 500px;
+height: 200px;
+position: absolute;
+}
+
+@keyframes dangus {
+  0% {background-position: 0;
+    background-color: #ccffff;
+  }
+  25% {background-position: 0;
+    background-color: #ccffff;
+  }
+  32% {background-position: 0;
+    background-color: #ff6666;
+  }
+  48% {background-position: 0;
+    background-color: #00264d;
+  }
+  80% {background-position: 0;
+    background-color: #00264d;
+  }
+  90% {background-position: 0;
+    background-color: #ff6666;
+  }
+  100% {background-position: 0;
+    background-color: #ccffff;
+  }
+}
+
+.zeme {
+      background: url(img/zeme.png) 0 100% repeat-x;
+      height: 300px;
+      width: 500px;
+      position: absolute;
+      right: 0px;
+      bottom: 0;
+    }
+
+    .kelias {
+          background: url(img/kelias.png) 0 100% repeat-x;
+          height: 25px;
+          width: 500px;
+          position: absolute;
+          right: 0px;
+          bottom: 20px;
+        }
+
+    .saule {
+    animation: saule 15s infinite;
+    background: url(img/saule.png) 0 0 no-repeat;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 400px;
+    bottom: 150px;
+    }
+
+    @keyframes saule {
+
+    0% {background-position: 0;
+      animation-timing-function: linear;
+      transform: translateY(0px);
+    }
+    25% {background-position: 0;
+      animation-timing-function: linear;
+      transform: translateY(0px);
+    }
+    50% {background-position: 0;
+      animation-timing-function: linear;
+      transform: translateY(200px);
+    }
+    75% {background-position: 0;
+      animation-timing-function: linear;
+      transform: translateY(200px);
+    }
+    100% {background-position: 0;
+      animation-timing-function: linear;
+      transform: translateY(0px);
+    }
+  }
+
+
+  .menulis {
+  animation: menulis 15s infinite;
+  background: url(img/menulis.png) 0 0 no-repeat;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 100px;
+  bottom: 150px;
+  }
+
+  @keyframes menulis {
+
+  0% {background-position: 0;
+    animation-timing-function: linear;
+    transform: translateY(200px);
+  }
+  25% {background-position: 0;
+    animation-timing-function: linear;
+    transform: translateY(200px);
+  }
+  50% {background-position: 0;
+    animation-timing-function: linear;
+    transform: translateY(0px);
+  }
+  75% {background-position: 0;
+    animation-timing-function: linear;
+    transform: translateY(0px);
+  }
+  100% {background-position: 0;
+    animation-timing-function: linear;
+    transform: translateY(200px);
+  }
+}
+
+
+    .sviesoforas {
+    animation: sviesoforas 10s steps(2) infinite;
+    background: url(img/sviesoforas.png) 0 100% no-repeat;
+    height: 25px;
+    width: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    }
+
+    @keyframes sviesoforas  {
+      0% {
+        background-position: 0px;
+        bottom: 18px;
+        left: 330px;
+      }
+      35% {
+        background-position: 0px;
+        bottom: 18px;
+        left: 330px;
+      }
+      100% {
+        background-position: -20px;
+        bottom: 18px;
+        left: 330px;
+      }
+    }
+
+    .masina {
+    animation: masina 10s infinite;
+    background: url(img/masina.png) 0 0 no-repeat;
+    height: 15px;
+    width: 25px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    }
+
+    @keyframes masina  {
+      0% {
+        background-position: 0px;
+        bottom: 25px;
+        left: -25px;
+      }
+      50% {
+        background-position: 0px;
+        bottom: 25px;
+        left: 300px;
+      }
+      70% {
+        background-position: 0px;
+        bottom: 25px;
+        left: 300px;
+        animation-timing-function: ease-in;
+      }
+      100% {
+        background-position: 0px;
+        bottom: 25px;
+        left: 550px;
+      }
+    }
+
+  .zmogeliukas {
+  animation: zmog 0.5s steps(4) infinite;
+  background: url(img/zmogeliukas.png) 0 0 no-repeat;
+  height: 70px;
+  width:calc(124px / 4);
+  position: absolute;
+  left: 100px;
+  bottom: 10px;
+  }
+
+  @keyframes zmog {
+  from {background-position: 0px;}
+  to {background-position: -124px;}
+  }
+
+
+
+  .paukstis {
+  animation: paukstis 2s steps(20) infinite;
+  background: url(img/paukstis.png) 0 0 no-repeat;
+  height: 45px;
+  width: calc(600px/ 20);
+  position: absolute;
+  left: -30px;
+  bottom: 0px;
+  }
+
+  @keyframes paukstis  {
+  from {
+    background-position: 0px;
+    bottom: 95px;
+    transform:translateX(0);
+  }
+  to {
+    background-position: -600px;
+    bottom: 70px;
+    transform: translateX(540px);
+  }
+}
+
+  .debesis {
+  animation: debesis 10s infinite linear;
+  background: url(img/debesis.png) 0 0 no-repeat;
+  height: 50px;
+  width: 70px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  }
+
+  @keyframes debesis  {
+  from {
+    background-position: 0px;
+    bottom: 150px;
+    left: 500px;
+  }
+  to {
+    background-position: 0px;
+    bottom: 150px;
+    left: -70px;
+  }
+
+</style>
+</head>
+<body>
+<div id="main">
+  <div id="wrapper">
+    <div class="dangus"></div>
+    <div class="saule"></div>
+    <div class="menulis"></div>
+    <div class="zeme"></div>
+    <div class="kelias"></div>
+    <div class="masina"></div>
+    <div class="sviesoforas"></div>
+    <div class="zmogeliukas"></div>
+    <div class="debesis"></div>
+    <div class="paukstis"></div>
+
+
+  </div>
+  </div>
+
+
+
+</body>
+
+
+</html>
